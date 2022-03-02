@@ -4,8 +4,6 @@ local M = {}
 M.options, M.ui, M.mappings, M.plugins = {}, {}, {}, {}
 M.options = {
   relativenumber = true,
-  swap = false,
-  wrap = false,
 }
 
 M.mappings.plugins = {
@@ -17,9 +15,9 @@ M.mappings.plugins = {
     focus = "<leader>m"
   }
 }
-
 M.ui = {
-  theme = "chadracula"
+  hl_override = "custom.configs.highlight",
+  theme = "aquarium"
     }
 
 M.plugins = {
@@ -39,7 +37,7 @@ M.plugins = {
       },
    },
    default_plugin_config_replace = {
-     nvim_tree = userConfigs.nvimtree
+     nvim_tree = userConfigs.nvimtree,
    },
 }
 

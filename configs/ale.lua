@@ -4,11 +4,12 @@ vim.g.ale_fixers = {
   javascript = {'eslint'},
   typescript = {'eslint'},
   javascriptreact = {'eslint', 'prettier'},
-  python = {'black','autopep8'},
+  python = {'black','autopep8','isort'},
   vue =  {'eslint', 'prettier'},
   html =  {'eslint', 'prettier'},
   json = {'prettier'},
   cpp = {'clang-format', 'clangtidy'},
+  php = {'php_cs_fixer'},
 }
 vim.g.ale_linters = {
   python =  {'bandit','pylama'},
@@ -18,12 +19,14 @@ vim.g.ale_linters = {
   json = {'prettier'},
   cpp = {'clangd', 'cc'},
   html = {'eslint', 'prettier'},
+  php = {'phpactor', 'intelephense'},
 }
-
-vim.g.ale_sign_error = " "
-vim.g.ale_sign_warning = " "
-vim.g.ale_echo_msg_error_str = " "
-vim.g.ale_echo_msg_warning_str = " "
+vim.cmd [[ highlight ALEErrorSign ctermbg=white ]]
+vim.cmd [[ highlight ALEWarningSign ctermbg=white ]]
+vim.g.ale_sign_error = ""
+vim.g.ale_sign_warning = ""
+vim.g.ale_echo_msg_error_str = ""
+vim.g.ale_echo_msg_warning_str = ""
 vim.g.ale_floating_window_border = {'', '', '', '', '', '', ''}
  -- vim.g.ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰']
 vim.g.ale_virtualtext_cursor = 1
