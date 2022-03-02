@@ -14,7 +14,11 @@ return {
   {"folke/lsp-colors.nvim"},
   {"github/copilot.vim"},
   {'hrsh7th/cmp-copilot'},
-  {'EdenEast/nightfox.nvim'},
+  {'EdenEast/nightfox.nvim',
+    config = function() 
+      require "custom.configs.nightfox-colorscheme"
+    end
+  },
   {'williamboman/nvim-lsp-installer'},
   {"lewis6991/gitsigns.nvim",
     requires = {

@@ -17,7 +17,7 @@ M.mappings.plugins = {
 }
 M.ui = {
   hl_override = "custom.configs.highlight",
-  theme = "aquarium"
+  theme = "onenord"
     }
 
 M.plugins = {

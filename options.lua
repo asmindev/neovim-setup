@@ -12,3 +12,4 @@ vim.cmd [[ autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2
 vim.cmd [[ autocmd Filetype vue setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 ]]
 vim.cmd [[ imap <silent><script><expr> <F2> copilot#Accept("")]]
 vim.cmd [[ let g:copilot_no_tab_map = v:true]]
+vim.cmd('colorscheme duskfox')
