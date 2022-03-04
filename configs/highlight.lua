@@ -29,8 +29,8 @@ local one_bg3 = colors.one_bg3
 local fg = require("core.utils").fg
 
 -- Pmenu
-fg("CmpItemAbbr", grey)
-fg("CmpItemAbbrMatch", green)
+fg("CmpItemAbbr", white)
+fg("CmpItemAbbrMatch", '#fd6b85')
 fg("CmpItemKind", orange)
 fg("CmpItemMenu", white)
 

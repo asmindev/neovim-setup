@@ -5,6 +5,17 @@ set.swapfile = false
 set.sidescrolloff = 8
 set.scrolloff = 4
 
+vim.g.nvim_tree_icons = {
+  folder = {
+      default = "",
+      empty = "",
+      empty_open = "",
+      open = "",
+      symlink = "",
+      symlink_open = "",
+   },
+
+}
 vim.cmd [[autocmd CursorHold,CursorHoldI * :Lspsaga show_cursor_diagnostics ]]
 vim.cmd [[ autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4 ]]
 vim.cmd [[ autocmd Filetype php setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4 ]]
